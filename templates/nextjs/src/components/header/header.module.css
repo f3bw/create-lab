@@ -1,0 +1,40 @@
+.header {
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    color: var(--color-text);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.link {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.link:hover {
+    color: var(--color-text);
+}

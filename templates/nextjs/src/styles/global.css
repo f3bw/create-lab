@@ -41,6 +41,7 @@
         --color-primary: hsl(0 0% 100%);
         --color-primary-hover: hsl(0 0% 85%);
         --color-surface: hsl(0 0% 12%);
+        --color-surface-hover: hsl(0 0% 16%);
         --color-border: hsl(0 0% 20%);
 
         --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;

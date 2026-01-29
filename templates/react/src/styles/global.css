@@ -40,7 +40,11 @@
         --color-text-muted: hsl(0 0% 60%);
         --color-primary: hsl(200 100% 50%);
         --color-primary-hover: hsl(200 100% 60%);
+        --color-secondary: hsl(280 80% 60%);
+        --color-secondary-hover: hsl(280 80% 70%);
+        --color-accent: hsl(150 80% 50%);
         --color-surface: hsl(0 0% 12%);
+        --color-surface-hover: hsl(0 0% 16%);
         --color-border: hsl(0 0% 20%);
 
         --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -49,6 +53,9 @@
         --radius-sm: 0.25rem;
         --radius-md: 0.5rem;
         --radius-lg: 1rem;
+
+        --transition-fast: 0.15s ease;
+        --transition-normal: 0.25s ease;
     }
 
     body {

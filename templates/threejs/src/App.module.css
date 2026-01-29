@@ -1,26 +1,88 @@
-.container {
+.app {
     height: 100vh;
     position: relative;
     width: 100vw;
 }
 
 .overlay {
+    display: flex;
+    flex-direction: column;
+    inset: 0;
+    justify-content: space-between;
+    pointer-events: none;
+    position: absolute;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.nav a {
+    color: var(--color-text-muted);
+    pointer-events: auto;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.nav a:hover {
+    color: var(--color-text);
+}
+
+.controls {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 3rem;
-    pointer-events: none;
-    position: absolute;
-    inset: 0;
+    gap: 1rem;
+    padding: 1rem;
+    pointer-events: auto;
+}
+
+.controlGroup {
+    align-items: center;
+    background-color: hsl(0 0% 0% / 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.label {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
 }
 
 .title {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
 }
 
 .hint {
     color: var(--color-text-muted);
+    font-size: 0.875rem;
 }
