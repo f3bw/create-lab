@@ -1,0 +1,26 @@
+.container {
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+.overlay {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hint {
+    color: var(--color-text-muted);
+}

@@ -1,0 +1,16 @@
+{
+  "name": "create-lab",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "create-lab": "./index.js"
+  },
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "fs-extra": "^11.0.0",
+    "picocolors": "^1.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.card {
+    padding: 2rem;
+}
+
+.hint {
+    color: var(--color-text-muted);
+    margin-top: 2rem;
+}
