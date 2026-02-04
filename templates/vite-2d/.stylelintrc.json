@@ -1,0 +1,39 @@
+{
+    "extends": ["stylelint-config-standard"],
+    "plugins": ["stylelint-order", "stylelint-plugin-use-baseline"],
+    "rules": {
+        "order/properties-alphabetical-order": true,
+        "selector-class-pattern": [
+            "^[a-z][a-zA-Z0-9]*$",
+            {
+                "message": "Selector should be written in camelCase for CSS modules."
+            }
+        ],
+        "property-no-unknown": [
+            true,
+            {
+                "ignoreProperties": ["composes", "compose-with"]
+            }
+        ],
+        "no-descending-specificity": null,
+        "media-feature-range-notation": "context",
+        "color-named": "never",
+        "color-no-hex": true,
+        "plugin/use-baseline": [
+            true,
+            {
+                "available": "widely",
+                "ignore": ["selectors-has"]
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": ["src/style.css"],
+            "rules": {
+                "selector-class-pattern": null,
+                "color-no-hex": null
+            }
+        }
+    ]
+}

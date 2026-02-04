@@ -1,0 +1,30 @@
+{
+    "name": "create-lab",
+    "version": "1.0.0",
+    "description": "CLI to scaffold lab projects (Vite 2D, Vite 3D, Next.js)",
+    "type": "module",
+    "bin": {
+        "create-lab": "./bin/create-lab.js"
+    },
+    "files": [
+        "bin",
+        "templates"
+    ],
+    "scripts": {
+        "link": "npm link"
+    },
+    "dependencies": {
+        "prompts": "^2.4.2",
+        "picocolors": "^1.1.1"
+    },
+    "keywords": [
+        "cli",
+        "scaffold",
+        "vite",
+        "threejs",
+        "nextjs",
+        "gsap"
+    ],
+    "author": "",
+    "license": "MIT"
+}

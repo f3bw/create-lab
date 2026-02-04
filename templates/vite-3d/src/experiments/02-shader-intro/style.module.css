@@ -1,0 +1,11 @@
+.info {
+    position: fixed;
+    bottom: var(--space-lg);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-surface);
+    border-radius: 8px;
+    font-size: 12px;
+    color: var(--color-text-muted);
+}

@@ -1,0 +1,142 @@
+.wrapper {
+    position: fixed;
+    inset: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2xl);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--color-bg) 0%, #1a1a2e 100%);
+}
+
+.heroContent {
+    text-align: center;
+}
+
+.heroTitle {
+    font-size: clamp(40px, 10vw, 100px);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: var(--space-md);
+}
+
+.heroSubtitle {
+    font-size: clamp(16px, 3vw, 24px);
+    color: var(--color-text-muted);
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: var(--space-xl);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-text-muted);
+    font-size: 12px;
+}
+
+.scrollArrow {
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid var(--color-text-muted);
+    border-bottom: 2px solid var(--color-text-muted);
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: rotate(45deg) translateY(0);
+    }
+    40% {
+        transform: rotate(45deg) translateY(10px);
+    }
+    60% {
+        transform: rotate(45deg) translateY(5px);
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    max-width: 600px;
+    width: 100%;
+}
+
+.card {
+    padding: var(--space-xl);
+    background: var(--color-surface);
+    border-radius: 16px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.cardTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.cardText {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.horizontal {
+    overflow: hidden;
+}
+
+.horizontalTrack {
+    display: flex;
+    width: fit-content;
+}
+
+.horizontalPanel {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(48px, 8vw, 120px);
+    font-weight: 700;
+}
+
+.panel1 {
+    background: linear-gradient(135deg, #ff6030 0%, #ff8050 100%);
+}
+
+.panel2 {
+    background: linear-gradient(135deg, #6030ff 0%, #8050ff 100%);
+}
+
+.panel3 {
+    background: linear-gradient(135deg, #30ff60 0%, #50ff80 100%);
+    color: var(--color-bg);
+}
+
+.finale {
+    background: var(--color-bg);
+}
+
+.finaleText {
+    font-size: clamp(32px, 6vw, 64px);
+    font-weight: 700;
+    text-align: center;
+}
